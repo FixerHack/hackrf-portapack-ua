@@ -41,6 +41,8 @@ for p in sorted(WIKI.glob("*.md")):
     pages[norm(p.stem)] = slug(p.stem)
 for p in TR.glob("*.md"):
     pages.setdefault(norm(p.stem), slug(p.stem))
+for p in (ROOT / "site_pages").glob("*.md"):
+    pages.setdefault(norm(p.stem), p.stem)
 pages.setdefault("home", "index")
 pages["home"] = "index"
 
@@ -58,6 +60,9 @@ def fix(text: str, depth_prefix: str = "") -> str:
     # [[Page|Text]] and [[Page]]
     def wl(m):
         inner = m.group(1)
+        img = inner.split("|")[0]
+        if re.search(r"\.(png|jpe?g|gif|webp)$", img, re.I):
+            return f"![]({img})"
         page, _, label = inner.replace("\\|", "|").partition("|")
         url, _ = target(page)
         return f"[{label or page}]({depth_prefix}{url})"
@@ -65,6 +70,10 @@ def fix(text: str, depth_prefix: str = "") -> str:
 
     def ml(m):
         label, href = m.group(1), m.group(2).strip()
+        if href.startswith("../wiki/"):
+            href = href[len("../wiki/"):]
+        if href.startswith(WIKI_URL):
+            href = re.sub(r"\.md(#|$)", r"\1", href)
         if href.startswith(WIKI_URL):
             url, ok = target(href[len(WIKI_URL):])
             return f"[{label}]({depth_prefix}{url})" if ok else m.group(0)
@@ -72,9 +81,14 @@ def fix(text: str, depth_prefix: str = "") -> str:
             return m.group(0)
         if href.endswith(".md") and not "/" in href:
             return m.group(0)
-        url, ok = target(href)
+        if href.startswith("hackrf/"):
+            pg, _, anc = href.partition("#")
+            return f"[{label}]({depth_prefix}{pg}.md" + (f"#{anc}" if anc else "") + ")"
+        url, ok = target(re.sub(r"\.md(#|$)", r"\1", href))
         return f"[{label}]({depth_prefix}{url})"
-    text = re.sub(r"(?<!!)\[([^\]]*)\]\(([^)\s]+(?:\([^)]*\))?[^)\s]*)\)", ml, text)
+    # посилання у формі ](<Назва (з дужками)>)
+    text = re.sub(r"(?<!!)\[([^\]]*)\]\(<([^>]+)>\)", lambda m: ml(m), text)
+    text = re.sub(r"(?<!!)\[([^\]]*)\]\(([^()\s<]+(?:\([^()]*\))?[^()\s]*)\)", ml, text)
     # GitHub alert syntax -> admonitions
     def alert(m):
         kind = m.group(1).lower()
@@ -136,13 +150,16 @@ def main():
     # hackrf docs
     (DOCS / "hackrf").mkdir()
     for p in (TR / "hackrf").glob("*.md"):
-        shutil.copy(p, DOCS / "hackrf" / p.name)
+        t = p.read_text(encoding="utf-8")
+        t = re.sub(r"(?<!!)\]\(([a-z0-9_]+)(#[^)]*)?\)", lambda m: f"]({m.group(1)}.md{m.group(2) or ''})", t)
+        (DOCS / "hackrf" / p.name).write_text(t, encoding="utf-8")
     imgsrc = ROOT / "upstream/hackrf-images"
     if imgsrc.exists():
         shutil.copytree(imgsrc, DOCS / "hackrf" / "images")
     # misc pages
     for p in (ROOT / "site_pages").glob("*.md"):  # extra.css копіюється нижче
-        shutil.copy(p, DOCS / p.name)
+        t = re.sub(r"\]\(([A-Za-z][\w-]*)\.md(#[^)]*)?\)", lambda m: f"]({m.group(1)}{m.group(2) or ''})", p.read_text(encoding="utf-8"))
+        (DOCS / p.name).write_text(fix(t), encoding="utf-8")
     for d in ("screens", "annotated"):
         if (ROOT / "assets" / d).exists():
             shutil.copytree(ROOT / "assets" / d, DOCS / d, ignore=shutil.ignore_patterns("_*"))

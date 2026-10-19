@@ -53,7 +53,7 @@ for line in sidebar.splitlines():
         add(cur, norm(href), lm.group(1))
 # leftover pages
 MY = ["my-device", "ui-guide", "screens-receivers", "screens-transmitters", "screens-other"]
-rest = [sl for k, sl in pages.items() if k not in seen and sl != "index" and sl not in MY]
+rest = [sl for k, sl in pages.items() if k not in seen and sl != "index" and sl not in MY and not (ROOT / "site_pages" / f"{sl}.md").exists()]
 
 def label(sl):
     t = titles.get(sl, sl) if sl in translated else labels.get(sl, titles.get(sl, sl))
@@ -121,6 +121,7 @@ pg += ["", "## Як допомогти", "", "Дивіться [Участь у 
 idx = (ROOT / "docs/index.md").read_text().replace("<!--progress-->", f"**Локалізація:** {pct_all:.0f}% вікі Mayhem перекладено — [докладніше](progress.md).\n\n" + bar(pct_all))
 (ROOT / "docs/index.md").write_text(idx)
 nav.insert(1, "  - Прогрес локалізації: progress.md")
+nav.insert(1, "  - \"📋 Завдання для вас\": tasks.md")
 
 yml = f"""site_name: HackRF + PortaPack Mayhem — українська документація
 site_description: Неофіційний український переклад документації HackRF та PortaPack Mayhem
@@ -154,6 +155,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {{kwds: {{case: lower}}}}
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:

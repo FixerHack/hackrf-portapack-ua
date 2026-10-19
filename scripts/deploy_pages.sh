@@ -8,6 +8,7 @@ OWNER="${1:-FixerHack}"; REPO="${2:-hackrf-portapack-ua}"
 .venv/bin/python scripts/gen_mkdocs.py
 sed "s#REPLACE_USER#$OWNER#g; s#REPLACE_REPO#$REPO#g" mkdocs.yml > mkdocs.final.yml
 .venv/bin/mkdocs build -q -f mkdocs.final.yml -d /tmp/site_final
+.venv/bin/python scripts/check_links.py /tmp/site_final | head -8
 rm mkdocs.final.yml
 touch /tmp/site_final/.nojekyll
 rm -rf /tmp/ghp && mkdir /tmp/ghp && cp -R /tmp/site_final/. /tmp/ghp/

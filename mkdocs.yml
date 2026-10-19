@@ -30,6 +30,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
@@ -43,6 +44,7 @@ validation:
   anchors: ignore
 nav:
   - Головна: index.md
+  - "📋 Завдання для вас": tasks.md
   - Прогрес локалізації: progress.md
   - Документація HackRF:
       - "Документація HackRF (українською)": hackrf/index.md
@@ -97,44 +99,44 @@ nav:
       - "Призначення та законність використання": intended-use-and-legality.md
       - "Застереження щодо використання": usage-cautions.md
       - "Перші кроки": first-steps.md
-      - "About firmwares (EN)": about-firmwares.md
-      - "Redirections on this manual/project (EN)": redirections.md
+      - "Про прошивки": about-firmwares.md
+      - "Переадресації в документації": redirections.md
       - "Оновлення прошивки": update-firmware.md
       - "Прошивка Mayhem на «голий» HackRF": flash-mayhem-onto-bare-hackrf.md
-      - "Updating the Xilinx CPLD on hackrf board (EN)": updating-the-xilinx-cpld-on-hackrf-board.md
+      - "Оновлення Xilinx CPLD на платі HackRF": updating-the-xilinx-cpld-on-hackrf-board.md
   - "Інтерфейс користувача":
       - "Інтерфейс користувача": user-interface.md
-      - "Title bar (EN)": title-bar.md
-      - "Main menu (EN)": main-menu.md
+      - "Рядок заголовка": title-bar.md
+      - "Головне меню": main-menu.md
       - "Основні елементи керування": main-controls.md
-      - "Text Entry (EN)": text-entry.md
-      - "Screenshots (EN)": screenshots.md
-      - "Create a custom splash screen (EN)": create-a-custom-splash-screen.md
-      - "Sleep mode (EN)": sleep-mode.md
-      - "Stealth mode (EN)": stealth-mode.md
-      - "SD Card content and modification (EN)": sd-card-content.md
+      - "Введення тексту": text-entry.md
+      - "Знімки екрана": screenshots.md
+      - "Власна заставка": create-a-custom-splash-screen.md
+      - "Режим сну": sleep-mode.md
+      - "Прихований режим": stealth-mode.md
+      - "Вміст SD-карти": sd-card-content.md
       - "Живлення PortaPack": powering-the-portapack.md
   - "Усунення несправностей":
       - "Усунення несправностей": troubleshooting.md
       - "Поширені запитання": faq.md
-      - "SolveBoard (EN)": solveboard.md
-      - "Won't boot (EN)": won-t-boot.md
-      - "Config Menu (EN)": config-menu.md
-      - "Dead Coin Cell Battery (EN)": dead-coin-cell-battery.md
-      - "H2+ RESET and DFU fix (EN)": h2-plus-reset-and-dfu-push-buttons-fix.md
+      - "SolveBoard: проблема → розв'язок": solveboard.md
+      - "Пристрій не завантажується": won-t-boot.md
+      - "Меню конфігурації": config-menu.md
+      - "Розряджена батарейка-таблетка": dead-coin-cell-battery.md
+      - "Виправлення кнопок RESET і DFU на старих PortaPack H2+": h2-plus-reset-and-dfu-push-buttons-fix.md
       - "Усунення проблем з оновленням прошивки": update-firmware-troubleshooting.md
-      - "Diagnose firmware update in Windows (EN)": diagnose-firmware-update-in-windows.md
-      - "DFU overlay (EN)": dfu-overlay.md
-      - "Factory Defaults (EN)": factory-defaults.md
-      - "Full reset (EN)": full-reset.md
-      - "Receive Quality Issues (EN)": help-im-not-receiving-anything-receive-quality-issues.md
-      - "No TX/RX (EN)": no-tx-or-rx.md
-      - "TX Carrier Only (EN)": tx-carrier-only.md
-      - "How to Format SDCard (EN)": how-to-format-sdcard.md
-      - "SD card not recognized by PC (EN)": sd-card-not-recognized-by-pc-with-the-sd-card-over-usb-selected.md
-      - "WebUSB serial (Linux) (EN)": web-usb-serial.md
-      - "USB-C port intermittent connection (EN)": usb-c-port-motion-based-connect-disconnect-loop-fix.md
-      - "What if I don't like some of the apps (EN)": what-if-i-don-t-like-some-of-the-apps.md
+      - "Діагностика оновлення прошивки у Windows": diagnose-firmware-update-in-windows.md
+      - "DFU-накладення": dfu-overlay.md
+      - "Заводські налаштування": factory-defaults.md
+      - "Повне скидання": full-reset.md
+      - "Проблеми з якістю приймання": help-im-not-receiving-anything-receive-quality-issues.md
+      - "Немає передавання чи приймання": no-tx-or-rx.md
+      - "Передається лише несуча": tx-carrier-only.md
+      - "Як відформатувати SD-карту": how-to-format-sdcard.md
+      - "SD-карту не розпізнає комп'ютер у режимі SD Over USB": sd-card-not-recognized-by-pc-with-the-sd-card-over-usb-selected.md
+      - "WebUSB serial не працює в Linux": web-usb-serial.md
+      - "Переривчасте з'єднання USB-C": usb-c-port-motion-based-connect-disconnect-loop-fix.md
+      - "Що робити, якщо мені не подобаються деякі застосунки": what-if-i-don-t-like-some-of-the-apps.md
   - "Застосунки":
       - "Застосунки": applications.md
   - "Приймачі":
@@ -320,7 +322,7 @@ nav:
       - "ADS B(S)": ads-b-s.md
       - "Automatic dependent surveillance–broadcast (ADS B)": automatic-dependent-surveillance-broadcast-ads-b.md
       - "Compile on Arch based distro (exclude Asahi)": compile-on-arch-based-distro-exclude-asahi.md
-      - "Completely reset": completely-reset.md
+      - "Повне скидання": completely-reset.md
       - "DECT RX": dect-rx.md
       - "etak": etak.md
       - "General Compiling Guide (Linux)": general-compiling-guide-linux.md
