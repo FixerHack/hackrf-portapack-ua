@@ -7,6 +7,8 @@
 """
 import re, shutil, sys, urllib.parse
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from annolegend import process as legends
 
 ROOT = Path(__file__).resolve().parent.parent
 WIKI = ROOT / "upstream/mayhem-wiki"
@@ -108,7 +110,7 @@ def main():
             if norm(cand.stem) == key:
                 tr = cand
         if tr:
-            text = fix(tr.read_text(encoding="utf-8"))
+            text = legends(fix(tr.read_text(encoding="utf-8")))
             (DOCS / f"{sl}.md").write_text(text, encoding="utf-8")
             translated.add(sl)
             stats["translated"] += 1

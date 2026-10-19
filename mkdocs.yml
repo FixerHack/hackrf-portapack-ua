@@ -43,6 +43,7 @@ validation:
   anchors: ignore
 nav:
   - Головна: index.md
+  - Прогрес локалізації: progress.md
   - Документація HackRF:
       - "Документація HackRF (українською)": hackrf/index.md
       - "Де отримати допомогу": hackrf/getting_help.md

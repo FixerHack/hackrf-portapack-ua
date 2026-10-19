@@ -81,6 +81,47 @@ if rest:
     for sl in sorted(rest):
         nav.append(f"      - {q(label(sl))}: {sl}.md")
 
+# ---- шкала локалізації ----
+WIKI = ROOT / "upstream/mayhem-wiki"
+def size_of(sl):
+    for k, v in pages.items():
+        if v == sl:
+            f = next((p for p in WIKI.glob("*.md") if norm(p.stem) == k), None)
+            return f.stat().st_size if f else 0
+    return 0
+def stat(slugs):
+    src = [x for x in slugs if size_of(x) > 400]
+    tot = sum(size_of(x) for x in src); done = sum(size_of(x) for x in src if x in translated)
+    return len(src), sum(1 for x in src if x in translated), tot, done
+def bar(pct):
+    return f'<div class="pbar"><div class="pfill" style="width:{pct:.1f}%"></div><span>{pct:.0f}%</span></div>'
+rows = []
+all_src = [sl for k, sl in pages.items() if size_of(sl) > 400 and sl not in MY]
+n, nd, tot, done = stat(all_src)
+hk_total = sum(f.stat().st_size for f in (ROOT / "upstream/hackrf-sources").glob("*.txt")) if (ROOT / "upstream/hackrf-sources").exists() else 0
+hk_done = sum((ROOT / "upstream/hackrf-sources" / (p.stem + ".rst.txt")).stat().st_size for p in (ROOT / "translations/hackrf").glob("*.md") if (ROOT / "upstream/hackrf-sources" / (p.stem + ".rst.txt")).exists())
+for g in order:
+    sl = [x for x in groups[g] if x != "index"]
+    a, b, t, d = stat(sl)
+    if a: rows.append((g, b, a, 100 * d / t if t else 0))
+rows.sort(key=lambda r: -r[3])
+pct_all = 100 * done / tot if tot else 0
+pg = ["# Прогрес локалізації", "",
+      "Шкала показує частку **вже перекладеного тексту** (за обсягом оригіналу в символах), а не кількість сторінок. Оновлюється автоматично під час збирання сайту.", "",
+      "## Усього", "",
+      f"**Вікі Mayhem:** перекладено {nd} із {n} сторінок ({pct_all:.0f}% за обсягом)", "", bar(pct_all), ""]
+if hk_total:
+    hp = 100 * hk_done / hk_total
+    pg += [f"**Документація HackRF:** перекладено {sum(1 for p in (ROOT / 'translations/hackrf').glob('*.md') if p.stem != 'index')} із {len(list((ROOT / 'upstream/hackrf-sources').glob('*.txt'))) - 1} сторінок ({hp:.0f}% за обсягом)", "", bar(hp), ""]
+pg += ["## За розділами", "", "| Розділ | Сторінок | Прогрес |", "|---|---|---|"]
+for g, b, a, p_ in rows:
+    pg.append(f"| {g} | {b} / {a} | {bar(p_)} |")
+pg += ["", "## Як допомогти", "", "Дивіться [Участь у перекладі](translation-guide.md) і пишіть, яких сторінок вам не вистачає."]
+(ROOT / "docs/progress.md").write_text("\n".join(pg) + "\n")
+idx = (ROOT / "docs/index.md").read_text().replace("<!--progress-->", f"**Локалізація:** {pct_all:.0f}% вікі Mayhem перекладено — [докладніше](progress.md).\n\n" + bar(pct_all))
+(ROOT / "docs/index.md").write_text(idx)
+nav.insert(1, "  - Прогрес локалізації: progress.md")
+
 yml = f"""site_name: HackRF + PortaPack Mayhem — українська документація
 site_description: Неофіційний український переклад документації HackRF та PortaPack Mayhem
 site_url: https://REPLACE_USER.github.io/REPLACE_REPO/
