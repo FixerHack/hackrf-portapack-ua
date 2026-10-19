@@ -141,32 +141,32 @@ nav:
       - "Застосунки": applications.md
   - "Приймачі":
       - "Приймачі": receivers.md
-      - "2-Tone-RX (EN)": 2-tone-rx.md
-      - "ACARS (EN)": acars.md
-      - "AFSK (EN)": afsk.md
-      - "AIS Boats (EN)": ais-boats.md
-      - "Analog TV (EN)": analog-tv-receiver.md
-      - "APRS RX (EN)": aprs-rx.md
-      - "Audio (EN)": audio-receivers.md
-      - "BLE RX (EN)": bluetooth-low-energy-receiver.md
+      - "2-Tone RX": 2-tone-rx.md
+      - "ACARS": acars.md
+      - "AFSK RX": afsk.md
+      - "AIS": ais-boats.md
+      - "Analog TV": analog-tv-receiver.md
+      - "APRS RX": aprs-rx.md
+      - "Audio": audio-receivers.md
+      - "BLE RX": bluetooth-low-energy-receiver.md
       - "Detector": detector.md
-      - "EPIRB RX (EN)": epirb-rx.md
-      - "ERT Meter (EN)": ert.md
-      - "Flex RX (EN)": flex-rx.md
+      - "EPIRB RX": epirb-rx.md
+      - "ERT Meter": ert.md
+      - "FLEX RX": flex-rx.md
       - "Fox Hunt": fox-hunt.md
-      - "FPV-Detect (EN)": fpv-detect.md
-      - "FT8 RX (EN)": ft8-rx.md
+      - "FPV Detect": fpv-detect.md
+      - "FT8 RX": ft8-rx.md
       - "gfxEQ": gfxeq.md
       - "Level": level.md
-      - "Meteor (EN)": meteor.md
+      - "Meteor LRPT": meteor.md
       - "Morse RX": morse-rx.md
-      - "NOAA (EN)": noaa.md
-      - "NRF (EN)": decoder-for-nrf24l01.md
-      - "POCSAG (EN)": pocsag-receiver.md
+      - "NOAA APT": noaa.md
+      - "NRF RX": decoder-for-nrf24l01.md
+      - "POCSAG RX": pocsag-receiver.md
       - "ProtoView": protoview.md
       - "Radio": radio.md
       - "Radiosonde": radiosonde.md
-      - "RDS RX (EN)": rds-rx.md
+      - "RDS RX": rds-rx.md
       - "RTTY RX (EN)": rtty-rx.md
       - "Scanner": scanner.md
       - "Search": search.md
@@ -230,47 +230,47 @@ nav:
       - "Remote (EN)": remote.md
       - "Looking Glass (EN)": looking-glass.md
   - "Утиліти":
-      - "Utilities (EN)": utilities.md
-      - "Antenna length (EN)": antennas.md
-      - "Calculator (EN)": calculator.md
-      - "Cart Lock (EN)": cart-lock.md
-      - "File manager (EN)": file-manager.md
-      - "Flash Utility (EN)": flash-utility.md
-      - "Freq manager (EN)": freq-manager.md
-      - "IQ Trim (EN)": iq-trim.md
-      - "Metronome (EN)": metronome.md
-      - "Notepad (EN)": notepad.md
-      - "Playlist Editor (EN)": playlist-editor.md
-      - "Rand Pwd (EN)": random-password.md
-      - "SD over USB (EN)": sd-over-usb.md
-      - "Stopwatch (EN)": stopwatch.md
-      - "Tuner (EN)": tuner.md
-      - "WardriveMap (EN)": wardrivemap.md
-      - "Waterfall Designer (EN)": waterfall-designer.md
-      - "Wav Viewer (EN)": wav-viewer.md
-      - "Wipe SD card (EN)": wipe-sd-card.md
+      - "Утиліти": utilities.md
+      - "Antenna Length": antennas.md
+      - "Calculator": calculator.md
+      - "Cart Lock": cart-lock.md
+      - "File Manager": file-manager.md
+      - "Flash Utility": flash-utility.md
+      - "Freq. Manager": freq-manager.md
+      - "IQ Trim": iq-trim.md
+      - "Metronome": metronome.md
+      - "Notepad": notepad.md
+      - "Playlist Editor": playlist-editor.md
+      - "Rand Pwd": random-password.md
+      - "SD Over USB": sd-over-usb.md
+      - "Stopwatch": stopwatch.md
+      - "Tuner": tuner.md
+      - "WardriveMap": wardrivemap.md
+      - "Waterfall Designer": waterfall-designer.md
+      - "WAV Viewer": wav-viewer.md
+      - "Wipe SD Card": wipe-sd-card.md
   - "Debug Menu (in Utilities)":
-      - "Debug Menu (in Utilities) (EN)": debug.md
+      - "Меню Debug": debug.md
   - "Ігри":
-      - "Games (EN)": games.md
-      - "2048 (EN)": 2048.md
-      - "Battleship (EN)": battleship.md
-      - "Blackjack (EN)": blackjack.md
-      - "Breakout (EN)": breakout.md
-      - "Digital Rain (EN)": digital-rain.md
-      - "Dino Game (EN)": dino-game.md
-      - "Doom (EN)": doom.md
-      - "Morse P (EN)": morse-p.md
-      - "Pac-Man (EN)": pac-man.md
-      - "Snake (EN)": snake.md
-      - "Space Invaders (EN)": space-invaders.md
-      - "Tetris (EN)": tetris.md
+      - "Ігри": games.md
+      - "2048": 2048.md
+      - "Battleship": battleship.md
+      - "Blackjack": blackjack.md
+      - "Breakout": breakout.md
+      - "Digital Rain": digital-rain.md
+      - "Dino Game": dino-game.md
+      - "Doom": doom.md
+      - "Morse P": morse-p.md
+      - "Pac-Man": pac-man.md
+      - "Snake": snake.md
+      - "Space Invaders": space-invaders.md
+      - "Tetris": tetris.md
   - "Налаштування":
       - "Налаштування": settings.md
       - "Режим HackRF": hackrf.md
   - "Різне":
       - "USB Serial Console (EN)": usb-serial-console.md
-      - "Waterfalls Colors (EN)": waterfalls-color-schemes.md
+      - "Кольорові схеми водоспаду": waterfalls-color-schemes.md
   - "Збирання прошивки":
       - "Compilation of the firmware (EN)": compile-firmware.md
       - "Compile on WSL with ninja (EN)": compile-on-wsl-with-ninja.md
