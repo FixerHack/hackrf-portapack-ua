@@ -221,14 +221,14 @@ nav:
       - "TPMS TX (EN)": tpms-tx.md
       - "VOR TX (EN)": vor-tx.md
       - "Трансівери": transceivers.md
-      - "Microphone Transceiver (EN)": microphone-transceiver.md
-      - "KISS TNC (EN)": kiss-tnc.md
-      - "Recon (EN)": recon.md
-      - "Capture (EN)": capture.md
-      - "C16 Format (EN)": c16-format.md
-      - "Replay (EN)": replay.md
-      - "Remote (EN)": remote.md
-      - "Looking Glass (EN)": looking-glass.md
+      - "Microphone": microphone-transceiver.md
+      - "KISS TNC": kiss-tnc.md
+      - "Recon": recon.md
+      - "Capture": capture.md
+      - "Формат C16": c16-format.md
+      - "Replay": replay.md
+      - "Remote": remote.md
+      - "Looking Glass": looking-glass.md
   - "Утиліти":
       - "Утиліти": utilities.md
       - "Antenna Length": antennas.md
