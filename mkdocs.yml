@@ -72,11 +72,11 @@ nav:
       - "Трансівери, Recon, Capture, Replay та утиліти": screens-other.md
   - Участь у перекладі: translation-guide.md
   - "Учасники":
-      - "Contributors (EN)": contributors.md
-      - "How to collaborate (EN)": how-to-collaborate.md
-      - "Contributing Guidelines (EN)": contributing-guidelines.md
-      - "Trusted contributors (EN)": trusted-contributors.md
-      - "How to ask questions correctly (EN)": how-to-ask-questions-in-correct-way.md
+      - "Учасники": contributors.md
+      - "Як долучитися": how-to-collaborate.md
+      - "Настанови щодо внеску": contributing-guidelines.md
+      - "Довірені учасники": trusted-contributors.md
+      - "Як правильно ставити запитання": how-to-ask-questions-in-correct-way.md
   - "Апаратна частина":
       - "Версії PortaPack": portapack-versions.md
       - "Можливості та характеристики": features.md
@@ -269,7 +269,7 @@ nav:
       - "Налаштування": settings.md
       - "Режим HackRF": hackrf.md
   - "Різне":
-      - "USB Serial Console (EN)": usb-serial-console.md
+      - "Послідовна консоль USB": usb-serial-console.md
       - "Кольорові схеми водоспаду": waterfalls-color-schemes.md
   - "Збирання прошивки":
       - "Compilation of the firmware (EN)": compile-firmware.md
@@ -312,7 +312,7 @@ nav:
       - "Bitmap reverse decode (EN)": bitmap-reverse-decode.md
       - "GUI Widget Preview (EN)": gui-widget-preview.md
       - "Dissecting the Temperature Logger (EN)": dissecting-the-temperature-logger.md
-      - "Differences between H1 and H2 (EN)": differences-between-h1-and-h2-models.md
+      - "Відмінності між моделями H1 і H2": differences-between-h1-and-h2-models.md
       - "UI Screenshots (EN)": ui-screenshots.md
       - "Creating a prod/stable release (EN)": creating-a-prod-stable-release.md
       - "Maintaining rules (EN)": maintaining-rules.md
