@@ -52,18 +52,23 @@ for line in sidebar.splitlines():
         if href.startswith("http") or "#" in href: continue
         add(cur, norm(href), lm.group(1))
 # leftover pages
-rest = [sl for k, sl in pages.items() if k not in seen and sl != "index"]
+MY = ["my-device", "ui-guide", "screens-receivers", "screens-transmitters", "screens-other"]
+rest = [sl for k, sl in pages.items() if k not in seen and sl != "index" and sl not in MY]
 
 def label(sl):
     t = titles.get(sl, sl) if sl in translated else labels.get(sl, titles.get(sl, sl))
     return t if len(t) < 60 else t[:57] + "…"
 
+def q(s): return '"' + s.replace('"', "'") + '"'
 nav = ["  - Головна: index.md", "  - Документація HackRF:"]
 for p in sorted((ROOT / "translations/hackrf").glob("*.md"), key=lambda p: (p.name != "index.md", p.name)):
     t = re.sub(r"^#\s*", "", p.read_text().splitlines()[0])
     nav.append(f"      - \"{t}\": hackrf/{p.name}")
+nav.append("  - \"Ваш пристрій і екрани\":")
+for sl in MY:
+    nav.append(f"      - {q(titles.get(sl, sl))}: {sl}.md")
 nav.append("  - Участь у перекладі: translation-guide.md")
-def q(s): return '"' + s.replace('"', "'") + '"'
+def _q(s): return '"' + s.replace('"', "'") + '"'
 for g in order:
     items = [sl for sl in groups[g] if sl != "index"]
     if not items: continue

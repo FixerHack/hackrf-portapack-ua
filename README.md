@@ -7,6 +7,10 @@
 - `scripts/build_docs.py` — збирає `docs/`; `scripts/gen_mkdocs.py` — генерує навігацію `mkdocs.yml`.
 - `site_pages/` — додаткові сторінки сайту.
 
+Публікація: `scripts/deploy_pages.sh` збирає сайт і оновлює гілку `gh-pages` (Pages налаштовано на неї).
+
+`assets/` — фото пристрою й скріншоти екранів (`screens/`), анотовані зображення (`annotated/`) генеруються `scripts/annotate_*.py`; описи застосунків — у `scripts/apps_data.py`.
+
 Локальна збірка:
 
 ```bash

@@ -61,6 +61,12 @@ nav:
       - "Усунення несправностей": hackrf/troubleshooting.md
       - "Оновлення прошивки": hackrf/updating_firmware.md
       - "USB-кабелі": hackrf/usb_cables.md
+  - "Ваш пристрій і екрани":
+      - "Ваш пристрій: HackRF One + PortaPack H2": my-device.md
+      - "Інтерфейс на вашому пристрої: анотовані екрани": ui-guide.md
+      - "Приймачі: огляд застосунків": screens-receivers.md
+      - "Передавачі: огляд застосунків": screens-transmitters.md
+      - "Трансівери, Recon, Capture, Replay та утиліти": screens-other.md
   - Участь у перекладі: translation-guide.md
   - "Учасники":
       - "Contributors (EN)": contributors.md
@@ -257,7 +263,7 @@ nav:
       - "Space Invaders (EN)": space-invaders.md
       - "Tetris (EN)": tetris.md
   - "Налаштування":
-      - "Settings (EN)": settings.md
+      - "Налаштування": settings.md
       - "Режим HackRF": hackrf.md
   - "Різне":
       - "USB Serial Console (EN)": usb-serial-console.md

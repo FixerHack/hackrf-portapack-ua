@@ -139,10 +139,13 @@ def main():
     if imgsrc.exists():
         shutil.copytree(imgsrc, DOCS / "hackrf" / "images")
     # misc pages
-    for p in (ROOT / "site_pages").glob("*.md"):
+    for p in (ROOT / "site_pages").glob("*.md"):  # extra.css копіюється нижче
         shutil.copy(p, DOCS / p.name)
+    for d in ("screens", "annotated"):
+        if (ROOT / "assets" / d).exists():
+            shutil.copytree(ROOT / "assets" / d, DOCS / d, ignore=shutil.ignore_patterns("_*"))
     (DOCS / "stylesheets").mkdir()
-    (DOCS / "stylesheets" / "extra.css").write_text(".md-typeset table:not([class]){font-size:.75rem}\n")
+    shutil.copy(ROOT / "site_pages" / "extra.css", DOCS / "stylesheets" / "extra.css")
     import json
     (ROOT / "scripts" / "titles.json").write_text(json.dumps({"titles": titles, "translated": sorted(translated)}, ensure_ascii=False, indent=1))
     print(stats, file=sys.stderr)
