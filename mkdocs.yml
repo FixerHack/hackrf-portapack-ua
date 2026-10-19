@@ -186,14 +186,14 @@ nav:
       - "Передавачі": transmitters.md
       - "2-Tone TX": 2-tone-tx.md
       - "Adult Toys": adult-toys.md
-      - "APRS TX (EN)": aprs-tx.md
+      - "APRS TX": aprs-tx.md
       - "BHT Xy/EP": bht.md
       - "BLE TX": bluetooth-low-energy-transmitter.md
       - "BLESpam": blespam.md
       - "Burger Pager": burger-pager.md
       - "CVS Spam": cvs-spam.md
-      - "EPIRB TX (EN)": epirb-tx.md
-      - "Flex TX (EN)": flex-tx.md
+      - "EPIRB TX": epirb-tx.md
+      - "Flex TX": flex-tx.md
       - "FlipperTX": flippertx.md
       - "GPS Sim": gps-sim.md
       - "Hopper": hopper.md
