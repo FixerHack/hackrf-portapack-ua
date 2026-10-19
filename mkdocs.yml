@@ -147,37 +147,37 @@ nav:
       - "APRS RX (EN)": aprs-rx.md
       - "Audio (EN)": audio-receivers.md
       - "BLE RX (EN)": bluetooth-low-energy-receiver.md
-      - "Detector (EN)": detector.md
+      - "Detector": detector.md
       - "EPIRB RX (EN)": epirb-rx.md
       - "ERT Meter (EN)": ert.md
       - "Flex RX (EN)": flex-rx.md
-      - "Fox-Hunt (EN)": fox-hunt.md
+      - "Fox Hunt": fox-hunt.md
       - "FPV-Detect (EN)": fpv-detect.md
       - "FT8 RX (EN)": ft8-rx.md
-      - "gfxEQ (EN)": gfxeq.md
-      - "Level (EN)": level.md
+      - "gfxEQ": gfxeq.md
+      - "Level": level.md
       - "Meteor (EN)": meteor.md
-      - "Morse RX (EN)": morse-rx.md
+      - "Morse RX": morse-rx.md
       - "NOAA (EN)": noaa.md
       - "NRF (EN)": decoder-for-nrf24l01.md
       - "POCSAG (EN)": pocsag-receiver.md
-      - "ProtoView (EN)": protoview.md
-      - "Radio (EN)": radio.md
-      - "Radiosonde (EN)": radiosonde.md
+      - "ProtoView": protoview.md
+      - "Radio": radio.md
+      - "Radiosonde": radiosonde.md
       - "RDS RX (EN)": rds-rx.md
       - "RTTY RX (EN)": rtty-rx.md
-      - "Scanner (EN)": scanner.md
-      - "Search (EN)": search.md
+      - "Scanner": scanner.md
+      - "Search": search.md
       - "Signal Hunter (EN)": signal-hunter.md
       - "Spectrum Analyzer (EN)": spectrum-analyzer.md
       - "SSTV RX (EN)": sstv-rx.md
-      - "SubCar (EN)": subcar.md
-      - "SubGhzD (EN)": subghzd.md
+      - "SubCar": subcar.md
+      - "SubGhzD": subghzd.md
       - "Tetra RX (EN)": tetra-rx.md
-      - "Time Sink (EN)": time-sink.md
-      - "TPMS RX (EN)": tpms-rx.md
+      - "Time Sink": time-sink.md
+      - "TPMS RX": tpms-rx.md
       - "VOR RX (EN)": vor-rx.md
-      - "Weather (EN)": weather.md
+      - "Weather": weather.md
       - "WeFax (EN)": weatherfax.md
       - "WMBus RX (EN)": wmbus-rx.md
   - "Передавачі":
