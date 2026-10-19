@@ -272,60 +272,60 @@ nav:
       - "Послідовна консоль USB": usb-serial-console.md
       - "Кольорові схеми водоспаду": waterfalls-color-schemes.md
   - "Збирання прошивки":
-      - "Compilation of the firmware (EN)": compile-firmware.md
-      - "Compile on WSL with ninja (EN)": compile-on-wsl-with-ninja.md
-      - "How to compile on Windows faster with WSL 2 (EN)": how-to-compile-faster-with-wsl-2.md
-      - "Compile on macOS (Docker) (EN)": using-mac-os.md
-      - "Dev build versions (EN)": dev-build-versions.md
-      - "Notes About ccache (EN)": notes-about-ccache.md
-      - "Create a custom map (EN)": create-a-custom-map-with-offline-map-maker.md
-      - "Code formatting (EN)": code-formatting.md
-      - "PR process (EN)": pr-process.md
+      - "Збирання прошивки": compile-firmware.md
+      - "Збирання на WSL з ninja": compile-on-wsl-with-ninja.md
+      - "Як швидше компілювати у Windows з WSL 2": how-to-compile-faster-with-wsl-2.md
+      - "Збирання на macOS": using-mac-os.md
+      - "Версії для розробки": dev-build-versions.md
+      - "Нотатки про ccache": notes-about-ccache.md
+      - "Створення власної карти через Offline Map Maker": create-a-custom-map-with-offline-map-maker.md
+      - "Форматування коду": code-formatting.md
+      - "Процес pull request": pr-process.md
   - "Опис структури":
-      - "Description of the Structure (EN)": description-of-the-structure.md
-      - "At First Glance (EN)": at-first-glance.md
-      - "Boot Process (EN)": boot-process.md
-      - "Firmware Architecture (EN)": firmware-architecture.md
-      - "Persistent Memory (EN)": persistent-memory.md
-      - "ChibiOS Notes (EN)": chibios-notes.md
+      - "Опис структури": description-of-the-structure.md
+      - "На перший погляд": at-first-glance.md
+      - "Процес завантаження": boot-process.md
+      - "Архітектура прошивки": firmware-architecture.md
+      - "Постійна пам'ять": persistent-memory.md
+      - "Нотатки про ChibiOS": chibios-notes.md
   - "Посібники з розробки":
-      - "Software Dev Guides (EN)": software-dev-guides.md
-      - "Code contribution rules (EN)": code-contribution-rules.md
-      - "Documentation standards & guidelines (EN)": documentation-standards-guidelines.md
-      - "Create a Simple App (EN)": create-a-simple-app.md
-      - "Create a Simple External App (EN)": create-a-simple-external-app.md
-      - "External Apps informations (EN)": external-apps-informations.md
-      - "Widgets (EN)": widgets.md
-      - "UI positioning with macros (EN)": ui-positioning-with-macros.md
-      - "Access Radio Hardware (EN)": access-radio-hardware.md
-      - "Interpret Guru meditation crashes (EN)": interpret-guru-meditation-crashes.md
-      - "Theme-system (EN)": theme-system.md
-      - "Debug via SWD & JTAG (EN)": debug-via-swd-jtag.md
-      - "Debug with serial (EN)": debug-with-serial.md
-      - "I2C drivers (EN)": i2c-external-device-driver-integration.md
-      - "Unit tests (EN)": unit-tests.md
+      - "Посібники з розробки ПЗ": software-dev-guides.md
+      - "Правила внеску коду": code-contribution-rules.md
+      - "Стандарти та рекомендації документації": documentation-standards-guidelines.md
+      - "Створення простого застосунку": create-a-simple-app.md
+      - "Створення простого зовнішнього застосунку": create-a-simple-external-app.md
+      - "Інформація про зовнішні застосунки": external-apps-informations.md
+      - "Віджети": widgets.md
+      - "Позиціювання UI через макроси": ui-positioning-with-macros.md
+      - "Доступ до радіообладнання": access-radio-hardware.md
+      - "Розбір збоїв Guru meditation": interpret-guru-meditation-crashes.md
+      - "Система тем": theme-system.md
+      - "Налагодження через SWD і JTAG": debug-via-swd-jtag.md
+      - "Налагодження через послідовний порт": debug-with-serial.md
+      - "Інтеграція драйвера зовнішнього пристрою I2C": i2c-external-device-driver-integration.md
+      - "Юніт-тести": unit-tests.md
   - "Інструменти":
-      - "make_airlines_db.py (EN)": make-airlines-db.md
-      - "make_icao24_db.py (EN)": make-icao24-db.md
-      - "world_map.bin (EN)": world-map-generation.md
-      - "Bitmap converters (EN)": splash-and-other-images.md
-      - "Bitmap reverse decode (EN)": bitmap-reverse-decode.md
-      - "GUI Widget Preview (EN)": gui-widget-preview.md
-      - "Dissecting the Temperature Logger (EN)": dissecting-the-temperature-logger.md
+      - "make_airlines_db.py": make-airlines-db.md
+      - "make_icao24_db.py": make-icao24-db.md
+      - "Генерація world_map.bin": world-map-generation.md
+      - "Конвертери зображень": splash-and-other-images.md
+      - "Зворотне декодування bitmap": bitmap-reverse-decode.md
+      - "Попередній перегляд віджетів GUI": gui-widget-preview.md
+      - "Розбір логера температури": dissecting-the-temperature-logger.md
       - "Відмінності між моделями H1 і H2": differences-between-h1-and-h2-models.md
-      - "UI Screenshots (EN)": ui-screenshots.md
-      - "Creating a prod/stable release (EN)": creating-a-prod-stable-release.md
-      - "Maintaining rules (EN)": maintaining-rules.md
-      - "Work Needed (Future Enhancement Suggestions) (EN)": work-needed.md
-      - "External App Roadmap (EN)": external-app-roadmap.md
+      - "Скриншоти UI": ui-screenshots.md
+      - "Створення стабільного релізу": creating-a-prod-stable-release.md
+      - "Правила супроводу": maintaining-rules.md
+      - "Потрібна робота": work-needed.md
+      - "Дорожня карта зовнішніх застосунків": external-app-roadmap.md
   - "Інші сторінки (EN)":
       - "ADS-B TX": ads-b-s.md
-      - "Automatic dependent surveillance–broadcast (ADS B)": automatic-dependent-surveillance-broadcast-ads-b.md
-      - "Compile on Arch based distro (exclude Asahi)": compile-on-arch-based-distro-exclude-asahi.md
+      - "ADS-B": automatic-dependent-surveillance-broadcast-ads-b.md
+      - "Збирання на дистрибутивах Arch": compile-on-arch-based-distro-exclude-asahi.md
       - "Повне скидання": completely-reset.md
       - "DECT RX": dect-rx.md
-      - "etak": etak.md
-      - "General Compiling Guide (Linux)": general-compiling-guide-linux.md
+      - "ETAK": etak.md
+      - "Загальний посібник зі збирання": general-compiling-guide-linux.md
       - "Playlist": playlist.md
-      - "SD Card (DEV)": sd-card-dev.md
-      - "Wont boot": wont-boot.md
+      - "SD-картка": sd-card-dev.md
+      - "Не завантажується": wont-boot.md

@@ -1,0 +1,17 @@
+# Посібники з розробки ПЗ
+
+- [Правила внеску коду](Code-contribution-rules)
+- [Стандарти та рекомендації документації](Documentation-Standards-&-Guidelines)
+- [Створення простого застосунку](Create-a-simple-app)
+- [Створення простого зовнішнього застосунку](Create-a-simple-external-app)
+- [Інформація про зовнішні застосунки](External-apps-informations)
+- [Віджети](Widgets)
+- [Позиціювання UI через макроси](UI-positioning-with-macros)
+- [SD-картка (для розробника)](SD-Card-(DEV))
+- [Доступ до радіообладнання](Access-Radio-Hardware)
+- [Розбір збоїв Guru meditation](Interpret-Guru-meditation-crashes)
+- [Система тем](Theme-system)
+- [Налагодження через SWD і JTAG](Debug-via-SWD-&-JTAG)
+- [Налагодження через послідовний порт](Debug-with-serial)
+- [Драйвери I2C](I2C-external-device-driver-integration)
+- [Юніт-тести](Unit-Tests)
