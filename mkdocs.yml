@@ -80,21 +80,21 @@ nav:
   - "Апаратна частина":
       - "Версії PortaPack": portapack-versions.md
       - "Можливості та характеристики": features.md
-      - "Original GSG HackRF One (EN)": original-gsg-hackrf-one.md
-      - "Clifford's-version (EN)": clifford-s-version.md
-      - "HackRF Pro (EN)": hackrf-pro.md
+      - "Оригінальний HackRF One від GSG": original-gsg-hackrf-one.md
+      - "Версія Кліффорда": clifford-s-version.md
+      - "HackRF Pro": hackrf-pro.md
       - "Огляд апаратної частини": hardware-overview.md
-      - "3d printed enclosure (EN)": 3d-printed-enclosure.md
-      - "H2 enclosure design (EN)": h2-enclosure.md
+      - "Корпус для 3D-друку": 3d-printed-enclosure.md
+      - "Дизайн корпусу H2": h2-enclosure.md
       - "Догляд за PortaPack/HackRF": care.md
-      - "Replace AMP (EN)": preamplifier-ic-replacement.md
-      - "SMD buttons and caps (EN)": push-buttons-and-button-caps.md
-      - "Encoder knob (EN)": encoder.md
-      - "SMA Connector replacement or removal (EN)": sma-connector-replacement-or-removal.md
-      - "Add GPIO TO H2 (EN)": add-gpio-to-h2.md
-      - "Internal speaker (EN)": internal-speaker.md
-      - "USB‐C charging modification for older HackRF boards (EN)": usb-c-charging-modification-for-older-hackrf-boards.md
-      - "H2+ speaker modifications (EN)": h2-plus-speaker-modifications.md
+      - "Заміна мікросхеми попереднього підсилювача": preamplifier-ic-replacement.md
+      - "Кнопки та ковпачки кнопок": push-buttons-and-button-caps.md
+      - "Енкодер": encoder.md
+      - "Заміна або видалення роз'єму SMA": sma-connector-replacement-or-removal.md
+      - "Додавання GPIO до H2": add-gpio-to-h2.md
+      - "Внутрішній динамік": internal-speaker.md
+      - "Модифікація заряджання USB-C для старих плат HackRF": usb-c-charging-modification-for-older-hackrf-boards.md
+      - "Модифікації динаміка H2+": h2-plus-speaker-modifications.md
   - "Посібник користувача":
       - "Призначення та законність використання": intended-use-and-legality.md
       - "Застереження щодо використання": usage-cautions.md
