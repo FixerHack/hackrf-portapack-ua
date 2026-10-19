@@ -184,42 +184,42 @@ nav:
       - "WMBus RX": wmbus-rx.md
   - "Передавачі":
       - "Передавачі": transmitters.md
-      - "2-Tone-TX (EN)": 2-tone-tx.md
-      - "Adult Toys (EN)": adult-toys.md
+      - "2-Tone TX": 2-tone-tx.md
+      - "Adult Toys": adult-toys.md
       - "APRS TX (EN)": aprs-tx.md
-      - "BHT Xy/EP (EN)": bht.md
-      - "BLE TX (EN)": bluetooth-low-energy-transmitter.md
-      - "BLESpam (EN)": blespam.md
-      - "Burger Pager (EN)": burger-pager.md
-      - "CVS Spam (EN)": cvs-spam.md
+      - "BHT Xy/EP": bht.md
+      - "BLE TX": bluetooth-low-energy-transmitter.md
+      - "BLESpam": blespam.md
+      - "Burger Pager": burger-pager.md
+      - "CVS Spam": cvs-spam.md
       - "EPIRB TX (EN)": epirb-tx.md
       - "Flex TX (EN)": flex-tx.md
-      - "FlipperTX (EN)": flippertx.md
-      - "GPS Sim (EN)": gps-sim.md
-      - "Hopper (EN)": hopper.md
-      - "Jammer (EN)": jammer.md
-      - "KeeLoq TX (EN)": keeloq-tx.md
-      - "Key fob TX (EN)": key-fob-tx.md
-      - "LGE Tool (EN)": lge-tool.md
-      - "MDC-1200 TX (EN)": mdc-1200-tx.md
-      - "Morse TX (EN)": morse-tx.md
-      - "OOK (EN)": ook.md
-      - "OOK Brute (EN)": ook-brute.md
-      - "OOK Editor (EN)": ook-editor.md
-      - "P25 TX (EN)": p25-tx.md
-      - "POCSAG TX (EN)": pocsag-tx.md
-      - "RDS (EN)": rds.md
-      - "RTTY TX (EN)": rtty-tx.md
-      - "SAME TX (EN)": same-tx.md
-      - "Security+ TX (EN)": security-plus-tx.md
-      - "Signal gen (EN)": signal-generator.md
-      - "Soundboard (EN)": soundboard.md
-      - "Spectrum Painter (EN)": spectrum-painter.md
-      - "SSTV (EN)": sstv.md
-      - "TEDI/LCR (EN)": lcr.md
-      - "TouchTunes (EN)": touchtunes.md
-      - "TPMS TX (EN)": tpms-tx.md
-      - "VOR TX (EN)": vor-tx.md
+      - "FlipperTX": flippertx.md
+      - "GPS Sim": gps-sim.md
+      - "Hopper": hopper.md
+      - "Jammer": jammer.md
+      - "KeeLoq TX": keeloq-tx.md
+      - "Key fob TX": key-fob-tx.md
+      - "LGE Tool": lge-tool.md
+      - "MDC-1200 TX": mdc-1200-tx.md
+      - "Morse TX": morse-tx.md
+      - "OOK": ook.md
+      - "OOK Brute": ook-brute.md
+      - "OOK Editor": ook-editor.md
+      - "P25 TX": p25-tx.md
+      - "POCSAG TX": pocsag-tx.md
+      - "RDS TX": rds.md
+      - "RTTY TX": rtty-tx.md
+      - "SAME TX": same-tx.md
+      - "Security+ TX": security-plus-tx.md
+      - "Signal gen": signal-generator.md
+      - "Soundboard": soundboard.md
+      - "Spectrum Painter": spectrum-painter.md
+      - "SSTV TX": sstv.md
+      - "TEDI/LCR TX": lcr.md
+      - "TouchTunes": touchtunes.md
+      - "TPMS TX": tpms-tx.md
+      - "VOR TX": vor-tx.md
       - "Трансівери": transceivers.md
       - "Microphone": microphone-transceiver.md
       - "KISS TNC": kiss-tnc.md
@@ -319,7 +319,7 @@ nav:
       - "Work Needed (Future Enhancement Suggestions) (EN)": work-needed.md
       - "External App Roadmap (EN)": external-app-roadmap.md
   - "Інші сторінки (EN)":
-      - "ADS B(S)": ads-b-s.md
+      - "ADS-B TX": ads-b-s.md
       - "Automatic dependent surveillance–broadcast (ADS B)": automatic-dependent-surveillance-broadcast-ads-b.md
       - "Compile on Arch based distro (exclude Asahi)": compile-on-arch-based-distro-exclude-asahi.md
       - "Повне скидання": completely-reset.md
