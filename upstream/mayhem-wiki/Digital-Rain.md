@@ -1,0 +1,1 @@
+Digital Rain is a visual demo that displays a Matrix-style falling character effect on the PortaPack screen. Columns of characters cascade from top to bottom on a black background, fading as they fall. There are no controls and no interaction — press the back button to exit.

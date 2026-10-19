@@ -1,0 +1,1 @@
+### [Moved to here: https://github.com/portapack-mayhem/mayhem-firmware/wiki/Won't-boot](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Won't-boot)

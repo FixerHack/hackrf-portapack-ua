@@ -1,0 +1,7 @@
+.venv/
+docs/
+site/
+scripts/titles.json
+.DS_Store
+mayhem-firmware.wiki/
+hackrf/

@@ -1,0 +1,4 @@
+- Once release created, don't edit it even if there's bug exist. Bug is normal on nightly, so don't panic. 
+- You shouldn't directly push to upstream, AKA this repo. 
+- Force push is not allowed in any case. 
+- At least one maintainer approve is needed for each PR (except the PR author) before merging.

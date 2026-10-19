@@ -1,0 +1,2 @@
+This link is outdated due to a document renaming, check https://github.com/portapack-mayhem/mayhem-firmware/wiki/Full-reset for same content  
+It exists just for receiving old hyperlink redirect from other places.

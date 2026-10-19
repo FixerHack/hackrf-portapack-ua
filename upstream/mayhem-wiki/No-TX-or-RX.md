@@ -1,0 +1,1 @@
+If not a software issue, check hardware. See [Preamplifier IC Replacement](preamplifier-ic-replacement).

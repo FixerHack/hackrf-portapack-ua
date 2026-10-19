@@ -1,0 +1,30 @@
+# SolveBoard
+
+A quick problem → solution lookup table. For the full list of troubleshooting articles, see [Troubleshooting](Troubleshooting).
+
+| Problem                                            | Solution                                                                                                     |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Does not boot / white screen / black screen | Check [Won't boot](Won't-boot) and [Config Menu](Config-Menu).                                              |
+|Only turn on once after flashing|Flashing with DFU only make the firmware go to RAM. You need to flash to the SPI flash once again(with regular flash methods)|
+| Crash / Guru Meditation.                            | Try [Full reset](Full-reset). If still does not work, try [Updating the Xilinx CPLD on hackrf board](Updating-the-Xilinx-CPLD-on-hackrf-board). If nothing works, [report an issue on GitHub](https://github.com/portapack-mayhem/mayhem-firmware/issues/new/choose). |
+| Freeze when launch specific app (but no crash or Guru Meditation)                            | It's mostly from power part. Try:<br />-Full charge<br />-Change battery<br />-Plug into a reliable power source<br />-Change battery<br />-Change at least 5 cables<br />-Remove add-on board if plugged in|
+| No splash screen / No time & date / Touchscreen does not work / Status bar icon disappeared / Backlight timeout abnormal / Encoder dial abnormal | Check [settings](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Settings).                                                               |
+| It says xxx missing / can't find xxx / xxx read error / xxx is outdated / xxx empty or you can't see xxx.                     | Make sure sdcard contents matches your [firmware version](https://github.com/portapack-mayhem/mayhem-firmware/releases). |
+| Apps are missing or greyed out after upgrading.  | Make sure [sdcard contents](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Update-firmware#microsd-card-files) matches your [firmware version](https://github.com/portapack-mayhem/mayhem-firmware/releases), particularly the external APPS folder, and make sure you [correctly put the sdcard contents](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Update-firmware#microsd-card-files). |
+|`hackrf_info` says `Hardware does not appear to have been manufactured by Great Scott Gadgets`|It's because you have a Hackrf clone instead of original from GSG. If you believe it's a mistake, contact the seller or GSG official support.|
+| Unexpected spike on my waterfall / IQ / spectrum. | It's either a [DC offset](https://hackrf.readthedocs.io/en/latest/faq.html#what-is-the-big-spike-in-the-center-of-my-received-spectrum) or noise from power. For reducing the noise, try using the internal battery. For DC offset, there's nothing you can do, however it’s normal on SDR. |
+| My computer can't see my HackRF | Try at least 5 different cables. If you are on Windows, try to install drivers in release package. Also try your luck with [Zadig](https://zadig.akeo.ie/). If not working, try on a Linux machine (exclude Ubuntu) |
+| My sound board app can't see the files i put in, but my fileman app can | follow [Soundboard](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Soundboard) to make correct file |
+| Screen went black when transmit / replay |Check [Stealth Mode](https://github.com/portapack-mayhem/mayhem-firmware/wiki/stealth-mode) |
+| Fail / freeze when recording / Can't see files even if I correctly put sdcard content| Make sure your sdcard is FAT32 format, and make sure it’s a branded one with acceptable quality |
+| My GPS-Simulation Doesn't work. / My bluetooth doesn't work.                                                                                     | Most modern devices use cellular to verify GPS. Make sure your device is vulnerable to gps-sim.<br />Go to Settings - Radio, and make sure the "Reference Source" says "External" or “portapack”. If not, then check the last checkbox and see if it's getting better.<br /> |
+|Charging is very slow|Check the following things:<br /> - Try at least 5 cables. <br /> - Use a good adapter, for example a 5V1A **branded** adapter<br /> - Don't use computer or laptop or similar thing to charge.|
+|How to turn on/off|One of these may turn on and another may turn off:<br />- Single press the knob<br />- Double press the knob<br />- Long press the knob<br />- Plug in USB cable<br />- Unplug USB cable|
+| Replay app shows empty list | You didn't press correct button. Check wiki |
+|Issues related to sdcard|<br />- use BRANDED sdcard from reliable seller. <br />- Use FAT32 format <br />- correctly put sdcard content which matches your firmware versions|
+|DFU suffix CRC doesn’t match / Cannot open DFU device| If you are on Windows, try to install drivers in release package. Also try your luck with [Zadig](https://zadig.akeo.ie/). If not working, try on a Linux machine (exclude Ubuntu) |
+|Screen backlight never turned off automatically even I correctly set the timeout count|Auto set threshold, follow this: https://github.com/portapack-mayhem/mayhem-firmware/wiki/Settings#touchscreen-threshold |
+|Issue that related to dial/knob/encoder|Go to setting, try all the dial sensitivity and rate multiplier|
+|”FLASH ERR” on my screen|It means you didn’t correctly flash the firmware, for example you unplugged your device while it was still flashing the firmware. If you are sure you did everything correctly but it still says that, then your SPI flash on your hacked board may be broken.|
+| Something else | Check more _Troubleshooting_ topics on the sidebar |
+|I don't like xxx apps|check [here](https://github.com/portapack-mayhem/mayhem-firmware/wiki/What-if-I-don't-like-some-of-the-apps)|

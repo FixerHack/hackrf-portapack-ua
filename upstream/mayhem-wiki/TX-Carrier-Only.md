@@ -1,0 +1,1 @@
+If your portapack is only transmitting a carrier wave, then this could be an indication of an outdated CPLD image. See [Updating the Xilinx CPLD on hackrf board](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Updating-the-Xilinx-CPLD-on-hackrf-board) for how to update the CPLD.

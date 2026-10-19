@@ -1,0 +1,1 @@
+This app was combined with the [Replay app](https://github.com/portapack-mayhem/mayhem-firmware/wiki/Replay) after 1.7.2.

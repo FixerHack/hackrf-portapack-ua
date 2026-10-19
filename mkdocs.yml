@@ -1,0 +1,322 @@
+site_name: HackRF + PortaPack Mayhem — українська документація
+site_description: Неофіційний український переклад документації HackRF та PortaPack Mayhem
+site_url: https://REPLACE_USER.github.io/REPLACE_REPO/
+repo_url: https://github.com/REPLACE_USER/REPLACE_REPO
+docs_dir: docs
+use_directory_urls: true
+theme:
+  name: material
+  language: uk
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle: {icon: material/weather-night, name: Темна тема}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle: {icon: material/weather-sunny, name: Світла тема}
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - search
+validation:
+  absolute_links: ignore
+  unrecognized_links: ignore
+  anchors: ignore
+nav:
+  - Головна: index.md
+  - Документація HackRF:
+      - "Документація HackRF (українською)": hackrf/index.md
+      - "Де отримати допомогу": hackrf/getting_help.md
+      - "Роз'єми": hackrf/hackrf_connectors.md
+      - "Мінімальні вимоги до хост-системи HackRF": hackrf/hackrf_minimum_requirements.md
+      - "HackRF One": hackrf/hackrf_one.md
+      - "HackRF Pro": hackrf/hackrf_pro.md
+      - "Інструменти HackRF": hackrf/hackrf_tools.md
+      - "Кнопки": hackrf/hackrfs_buttons.md
+      - "Встановлення програмного забезпечення HackRF": hackrf/installing_hackrf_software.md
+      - "Світлодіоди": hackrf/leds.md
+      - "Апаратні ревізії": hackrf/list_of_hardware_revisions.md
+      - "Частота дискретизації та фільтри основної смуги": hackrf/sampling_rate.md
+      - "Налаштування підсилення на приймання": hackrf/setting_gain.md
+      - "Сторонні програми, сумісні з HackRF": hackrf/software_support.md
+      - "Усунення несправностей": hackrf/troubleshooting.md
+      - "Оновлення прошивки": hackrf/updating_firmware.md
+      - "USB-кабелі": hackrf/usb_cables.md
+  - Участь у перекладі: translation-guide.md
+  - "Учасники":
+      - "Contributors (EN)": contributors.md
+      - "How to collaborate (EN)": how-to-collaborate.md
+      - "Contributing Guidelines (EN)": contributing-guidelines.md
+      - "Trusted contributors (EN)": trusted-contributors.md
+      - "How to ask questions correctly (EN)": how-to-ask-questions-in-correct-way.md
+  - "Апаратна частина":
+      - "Версії PortaPack": portapack-versions.md
+      - "Можливості та характеристики": features.md
+      - "Original GSG HackRF One (EN)": original-gsg-hackrf-one.md
+      - "Clifford's-version (EN)": clifford-s-version.md
+      - "HackRF Pro (EN)": hackrf-pro.md
+      - "Огляд апаратної частини": hardware-overview.md
+      - "3d printed enclosure (EN)": 3d-printed-enclosure.md
+      - "H2 enclosure design (EN)": h2-enclosure.md
+      - "Догляд за PortaPack/HackRF": care.md
+      - "Replace AMP (EN)": preamplifier-ic-replacement.md
+      - "SMD buttons and caps (EN)": push-buttons-and-button-caps.md
+      - "Encoder knob (EN)": encoder.md
+      - "SMA Connector replacement or removal (EN)": sma-connector-replacement-or-removal.md
+      - "Add GPIO TO H2 (EN)": add-gpio-to-h2.md
+      - "Internal speaker (EN)": internal-speaker.md
+      - "USB‐C charging modification for older HackRF boards (EN)": usb-c-charging-modification-for-older-hackrf-boards.md
+      - "H2+ speaker modifications (EN)": h2-plus-speaker-modifications.md
+  - "Посібник користувача":
+      - "Призначення та законність використання": intended-use-and-legality.md
+      - "Застереження щодо використання": usage-cautions.md
+      - "Перші кроки": first-steps.md
+      - "About firmwares (EN)": about-firmwares.md
+      - "Redirections on this manual/project (EN)": redirections.md
+      - "Оновлення прошивки": update-firmware.md
+      - "Прошивка Mayhem на «голий» HackRF": flash-mayhem-onto-bare-hackrf.md
+      - "Updating the Xilinx CPLD on hackrf board (EN)": updating-the-xilinx-cpld-on-hackrf-board.md
+  - "Інтерфейс користувача":
+      - "Інтерфейс користувача": user-interface.md
+      - "Title bar (EN)": title-bar.md
+      - "Main menu (EN)": main-menu.md
+      - "Основні елементи керування": main-controls.md
+      - "Text Entry (EN)": text-entry.md
+      - "Screenshots (EN)": screenshots.md
+      - "Create a custom splash screen (EN)": create-a-custom-splash-screen.md
+      - "Sleep mode (EN)": sleep-mode.md
+      - "Stealth mode (EN)": stealth-mode.md
+      - "SD Card content and modification (EN)": sd-card-content.md
+      - "Живлення PortaPack": powering-the-portapack.md
+  - "Усунення несправностей":
+      - "Усунення несправностей": troubleshooting.md
+      - "Поширені запитання": faq.md
+      - "SolveBoard (EN)": solveboard.md
+      - "Won't boot (EN)": won-t-boot.md
+      - "Config Menu (EN)": config-menu.md
+      - "Dead Coin Cell Battery (EN)": dead-coin-cell-battery.md
+      - "H2+ RESET and DFU fix (EN)": h2-plus-reset-and-dfu-push-buttons-fix.md
+      - "Усунення проблем з оновленням прошивки": update-firmware-troubleshooting.md
+      - "Diagnose firmware update in Windows (EN)": diagnose-firmware-update-in-windows.md
+      - "DFU overlay (EN)": dfu-overlay.md
+      - "Factory Defaults (EN)": factory-defaults.md
+      - "Full reset (EN)": full-reset.md
+      - "Receive Quality Issues (EN)": help-im-not-receiving-anything-receive-quality-issues.md
+      - "No TX/RX (EN)": no-tx-or-rx.md
+      - "TX Carrier Only (EN)": tx-carrier-only.md
+      - "How to Format SDCard (EN)": how-to-format-sdcard.md
+      - "SD card not recognized by PC (EN)": sd-card-not-recognized-by-pc-with-the-sd-card-over-usb-selected.md
+      - "WebUSB serial (Linux) (EN)": web-usb-serial.md
+      - "USB-C port intermittent connection (EN)": usb-c-port-motion-based-connect-disconnect-loop-fix.md
+      - "What if I don't like some of the apps (EN)": what-if-i-don-t-like-some-of-the-apps.md
+  - "Застосунки":
+      - "Застосунки": applications.md
+  - "Приймачі":
+      - "Приймачі": receivers.md
+      - "2-Tone-RX (EN)": 2-tone-rx.md
+      - "ACARS (EN)": acars.md
+      - "AFSK (EN)": afsk.md
+      - "AIS Boats (EN)": ais-boats.md
+      - "Analog TV (EN)": analog-tv-receiver.md
+      - "APRS RX (EN)": aprs-rx.md
+      - "Audio (EN)": audio-receivers.md
+      - "BLE RX (EN)": bluetooth-low-energy-receiver.md
+      - "Detector (EN)": detector.md
+      - "EPIRB RX (EN)": epirb-rx.md
+      - "ERT Meter (EN)": ert.md
+      - "Flex RX (EN)": flex-rx.md
+      - "Fox-Hunt (EN)": fox-hunt.md
+      - "FPV-Detect (EN)": fpv-detect.md
+      - "FT8 RX (EN)": ft8-rx.md
+      - "gfxEQ (EN)": gfxeq.md
+      - "Level (EN)": level.md
+      - "Meteor (EN)": meteor.md
+      - "Morse RX (EN)": morse-rx.md
+      - "NOAA (EN)": noaa.md
+      - "NRF (EN)": decoder-for-nrf24l01.md
+      - "POCSAG (EN)": pocsag-receiver.md
+      - "ProtoView (EN)": protoview.md
+      - "Radio (EN)": radio.md
+      - "Radiosonde (EN)": radiosonde.md
+      - "RDS RX (EN)": rds-rx.md
+      - "RTTY RX (EN)": rtty-rx.md
+      - "Scanner (EN)": scanner.md
+      - "Search (EN)": search.md
+      - "Signal Hunter (EN)": signal-hunter.md
+      - "Spectrum Analyzer (EN)": spectrum-analyzer.md
+      - "SSTV RX (EN)": sstv-rx.md
+      - "SubCar (EN)": subcar.md
+      - "SubGhzD (EN)": subghzd.md
+      - "Tetra RX (EN)": tetra-rx.md
+      - "Time Sink (EN)": time-sink.md
+      - "TPMS RX (EN)": tpms-rx.md
+      - "VOR RX (EN)": vor-rx.md
+      - "Weather (EN)": weather.md
+      - "WeFax (EN)": weatherfax.md
+      - "WMBus RX (EN)": wmbus-rx.md
+  - "Передавачі":
+      - "Передавачі": transmitters.md
+      - "2-Tone-TX (EN)": 2-tone-tx.md
+      - "Adult Toys (EN)": adult-toys.md
+      - "APRS TX (EN)": aprs-tx.md
+      - "BHT Xy/EP (EN)": bht.md
+      - "BLE TX (EN)": bluetooth-low-energy-transmitter.md
+      - "BLESpam (EN)": blespam.md
+      - "Burger Pager (EN)": burger-pager.md
+      - "CVS Spam (EN)": cvs-spam.md
+      - "EPIRB TX (EN)": epirb-tx.md
+      - "Flex TX (EN)": flex-tx.md
+      - "FlipperTX (EN)": flippertx.md
+      - "GPS Sim (EN)": gps-sim.md
+      - "Hopper (EN)": hopper.md
+      - "Jammer (EN)": jammer.md
+      - "KeeLoq TX (EN)": keeloq-tx.md
+      - "Key fob TX (EN)": key-fob-tx.md
+      - "LGE Tool (EN)": lge-tool.md
+      - "MDC-1200 TX (EN)": mdc-1200-tx.md
+      - "Morse TX (EN)": morse-tx.md
+      - "OOK (EN)": ook.md
+      - "OOK Brute (EN)": ook-brute.md
+      - "OOK Editor (EN)": ook-editor.md
+      - "P25 TX (EN)": p25-tx.md
+      - "POCSAG TX (EN)": pocsag-tx.md
+      - "RDS (EN)": rds.md
+      - "RTTY TX (EN)": rtty-tx.md
+      - "SAME TX (EN)": same-tx.md
+      - "Security+ TX (EN)": security-plus-tx.md
+      - "Signal gen (EN)": signal-generator.md
+      - "Soundboard (EN)": soundboard.md
+      - "Spectrum Painter (EN)": spectrum-painter.md
+      - "SSTV (EN)": sstv.md
+      - "TEDI/LCR (EN)": lcr.md
+      - "TouchTunes (EN)": touchtunes.md
+      - "TPMS TX (EN)": tpms-tx.md
+      - "VOR TX (EN)": vor-tx.md
+      - "Трансівери": transceivers.md
+      - "Microphone Transceiver (EN)": microphone-transceiver.md
+      - "KISS TNC (EN)": kiss-tnc.md
+      - "Recon (EN)": recon.md
+      - "Capture (EN)": capture.md
+      - "C16 Format (EN)": c16-format.md
+      - "Replay (EN)": replay.md
+      - "Remote (EN)": remote.md
+      - "Looking Glass (EN)": looking-glass.md
+  - "Утиліти":
+      - "Utilities (EN)": utilities.md
+      - "Antenna length (EN)": antennas.md
+      - "Calculator (EN)": calculator.md
+      - "Cart Lock (EN)": cart-lock.md
+      - "File manager (EN)": file-manager.md
+      - "Flash Utility (EN)": flash-utility.md
+      - "Freq manager (EN)": freq-manager.md
+      - "IQ Trim (EN)": iq-trim.md
+      - "Metronome (EN)": metronome.md
+      - "Notepad (EN)": notepad.md
+      - "Playlist Editor (EN)": playlist-editor.md
+      - "Rand Pwd (EN)": random-password.md
+      - "SD over USB (EN)": sd-over-usb.md
+      - "Stopwatch (EN)": stopwatch.md
+      - "Tuner (EN)": tuner.md
+      - "WardriveMap (EN)": wardrivemap.md
+      - "Waterfall Designer (EN)": waterfall-designer.md
+      - "Wav Viewer (EN)": wav-viewer.md
+      - "Wipe SD card (EN)": wipe-sd-card.md
+  - "Debug Menu (in Utilities)":
+      - "Debug Menu (in Utilities) (EN)": debug.md
+  - "Ігри":
+      - "Games (EN)": games.md
+      - "2048 (EN)": 2048.md
+      - "Battleship (EN)": battleship.md
+      - "Blackjack (EN)": blackjack.md
+      - "Breakout (EN)": breakout.md
+      - "Digital Rain (EN)": digital-rain.md
+      - "Dino Game (EN)": dino-game.md
+      - "Doom (EN)": doom.md
+      - "Morse P (EN)": morse-p.md
+      - "Pac-Man (EN)": pac-man.md
+      - "Snake (EN)": snake.md
+      - "Space Invaders (EN)": space-invaders.md
+      - "Tetris (EN)": tetris.md
+  - "Налаштування":
+      - "Settings (EN)": settings.md
+      - "Режим HackRF": hackrf.md
+  - "Різне":
+      - "USB Serial Console (EN)": usb-serial-console.md
+      - "Waterfalls Colors (EN)": waterfalls-color-schemes.md
+  - "Збирання прошивки":
+      - "Compilation of the firmware (EN)": compile-firmware.md
+      - "Compile on WSL with ninja (EN)": compile-on-wsl-with-ninja.md
+      - "How to compile on Windows faster with WSL 2 (EN)": how-to-compile-faster-with-wsl-2.md
+      - "Compile on macOS (Docker) (EN)": using-mac-os.md
+      - "Dev build versions (EN)": dev-build-versions.md
+      - "Notes About ccache (EN)": notes-about-ccache.md
+      - "Create a custom map (EN)": create-a-custom-map-with-offline-map-maker.md
+      - "Code formatting (EN)": code-formatting.md
+      - "PR process (EN)": pr-process.md
+  - "Опис структури":
+      - "Description of the Structure (EN)": description-of-the-structure.md
+      - "At First Glance (EN)": at-first-glance.md
+      - "Boot Process (EN)": boot-process.md
+      - "Firmware Architecture (EN)": firmware-architecture.md
+      - "Persistent Memory (EN)": persistent-memory.md
+      - "ChibiOS Notes (EN)": chibios-notes.md
+  - "Посібники з розробки":
+      - "Software Dev Guides (EN)": software-dev-guides.md
+      - "Code contribution rules (EN)": code-contribution-rules.md
+      - "Documentation standards & guidelines (EN)": documentation-standards-guidelines.md
+      - "Create a Simple App (EN)": create-a-simple-app.md
+      - "Create a Simple External App (EN)": create-a-simple-external-app.md
+      - "External Apps informations (EN)": external-apps-informations.md
+      - "Widgets (EN)": widgets.md
+      - "UI positioning with macros (EN)": ui-positioning-with-macros.md
+      - "Access Radio Hardware (EN)": access-radio-hardware.md
+      - "Interpret Guru meditation crashes (EN)": interpret-guru-meditation-crashes.md
+      - "Theme-system (EN)": theme-system.md
+      - "Debug via SWD & JTAG (EN)": debug-via-swd-jtag.md
+      - "Debug with serial (EN)": debug-with-serial.md
+      - "I2C drivers (EN)": i2c-external-device-driver-integration.md
+      - "Unit tests (EN)": unit-tests.md
+  - "Інструменти":
+      - "make_airlines_db.py (EN)": make-airlines-db.md
+      - "make_icao24_db.py (EN)": make-icao24-db.md
+      - "world_map.bin (EN)": world-map-generation.md
+      - "Bitmap converters (EN)": splash-and-other-images.md
+      - "Bitmap reverse decode (EN)": bitmap-reverse-decode.md
+      - "GUI Widget Preview (EN)": gui-widget-preview.md
+      - "Dissecting the Temperature Logger (EN)": dissecting-the-temperature-logger.md
+      - "Differences between H1 and H2 (EN)": differences-between-h1-and-h2-models.md
+      - "UI Screenshots (EN)": ui-screenshots.md
+      - "Creating a prod/stable release (EN)": creating-a-prod-stable-release.md
+      - "Maintaining rules (EN)": maintaining-rules.md
+      - "Work Needed (Future Enhancement Suggestions) (EN)": work-needed.md
+      - "External App Roadmap (EN)": external-app-roadmap.md
+  - "Інші сторінки (EN)":
+      - "ADS B(S)": ads-b-s.md
+      - "Automatic dependent surveillance–broadcast (ADS B)": automatic-dependent-surveillance-broadcast-ads-b.md
+      - "Compile on Arch based distro (exclude Asahi)": compile-on-arch-based-distro-exclude-asahi.md
+      - "Completely reset": completely-reset.md
+      - "DECT RX": dect-rx.md
+      - "etak": etak.md
+      - "General Compiling Guide (Linux)": general-compiling-guide-linux.md
+      - "Playlist": playlist.md
+      - "SD Card (DEV)": sd-card-dev.md
+      - "Wont boot": wont-boot.md

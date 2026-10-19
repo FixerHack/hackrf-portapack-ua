@@ -1,0 +1,2 @@
+When you wanna check your bitmap with human eyes, you can use this script to convert it back to image that human eyes can read.   
+The script is at https://github.com/portapack-mayhem/mayhem-firmware/blob/next/firmware/tools/bitmap_tools/bitmap_arr_reverse_decode.py which is independent of project compile proccess.
