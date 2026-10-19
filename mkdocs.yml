@@ -167,21 +167,21 @@ nav:
       - "Radio": radio.md
       - "Radiosonde": radiosonde.md
       - "RDS RX": rds-rx.md
-      - "RTTY RX (EN)": rtty-rx.md
+      - "RTTY RX": rtty-rx.md
       - "Scanner": scanner.md
       - "Search": search.md
-      - "Signal Hunter (EN)": signal-hunter.md
-      - "Spectrum Analyzer (EN)": spectrum-analyzer.md
-      - "SSTV RX (EN)": sstv-rx.md
+      - "Signal Hunter": signal-hunter.md
+      - "Spectrum Analyzer": spectrum-analyzer.md
+      - "SSTV RX": sstv-rx.md
       - "SubCar": subcar.md
       - "SubGhzD": subghzd.md
-      - "Tetra RX (EN)": tetra-rx.md
+      - "Tetra RX": tetra-rx.md
       - "Time Sink": time-sink.md
       - "TPMS RX": tpms-rx.md
-      - "VOR RX (EN)": vor-rx.md
+      - "VOR RX": vor-rx.md
       - "Weather": weather.md
-      - "WeFax (EN)": weatherfax.md
-      - "WMBus RX (EN)": wmbus-rx.md
+      - "WeatherFax / WeFax": weatherfax.md
+      - "WMBus RX": wmbus-rx.md
   - "Передавачі":
       - "Передавачі": transmitters.md
       - "2-Tone-TX (EN)": 2-tone-tx.md
