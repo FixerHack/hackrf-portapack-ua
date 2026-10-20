@@ -67,6 +67,7 @@ for p in sorted((ROOT / "translations/hackrf").glob("*.md"), key=lambda p: (p.na
 nav.append("  - \"Ваш пристрій і екрани\":")
 for sl in MY:
     nav.append(f"      - {q(titles.get(sl, sl))}: {sl}.md")
+nav.append("  - \"⚠️ Безпека й законність передавання\": tx-safety.md")
 nav.append("  - Участь у перекладі: translation-guide.md")
 def _q(s): return '"' + s.replace('"', "'") + '"'
 for g in order:

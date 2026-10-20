@@ -70,6 +70,7 @@ nav:
       - "Приймачі: огляд застосунків": screens-receivers.md
       - "Передавачі: огляд застосунків": screens-transmitters.md
       - "Трансівери, Recon, Capture, Replay та утиліти": screens-other.md
+  - "⚠️ Безпека й законність передавання": tx-safety.md
   - Участь у перекладі: translation-guide.md
   - "Учасники":
       - "Учасники": contributors.md
