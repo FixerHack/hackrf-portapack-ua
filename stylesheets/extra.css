@@ -1,0 +1,10 @@
+.md-typeset table:not([class]){font-size:.75rem}
+.md-typeset .app{display:flex;flex-wrap:wrap;gap:1rem 1.25rem;align-items:flex-start;margin:.5rem 0 1.5rem}
+.md-typeset .app .shot{flex:0 0 auto;max-width:340px}
+.md-typeset .app .shot img{border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.35)}
+.md-typeset .app .txt{flex:1 1 280px;min-width:0}
+.md-typeset .app .txt>p:first-child{margin-top:0}
+.md-typeset img{max-width:100%;height:auto}
+.pbar{position:relative;height:1.35rem;border-radius:.7rem;background:rgba(128,128,128,.25);overflow:hidden;min-width:140px}
+.pbar .pfill{height:100%;background:linear-gradient(90deg,#1e88e5,#43a047)}
+.pbar span{position:absolute;inset:0;text-align:center;font-size:.75rem;line-height:1.35rem;font-weight:700;color:#fff;text-shadow:0 0 3px #000}
